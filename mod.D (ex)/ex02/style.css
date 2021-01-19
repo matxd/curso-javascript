@@ -1,0 +1,22 @@
+body {
+    background: grey;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.664);
+}
+
+footer {
+    font-size: 20px;
+    text-align: center;
+}
