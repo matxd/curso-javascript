@@ -1,6 +1,6 @@
 // LEMBRE-SE DE ADICIONAR COMENTARIOS PARA EXECUTAR OS CODIGOS INDIVIDUAIS
 
-function parimpar (numero) { //  () parametro formal recebe o valor do paramentro real
+function parimpar (numero) { //  () parametro formal recebe o valor do parametro real
     if (numero % 2 == 0) {
         return "par"
     } else {
@@ -9,7 +9,7 @@ function parimpar (numero) { //  () parametro formal recebe o valor do paramentr
 }
 
 var resultado = parimpar(10) // () parametro real é jogado pra dentro do parametro formal
-console.log(`O numero é ${resultado}!`)
+console.log("O numero é ${resultado}!")
 
 
 function soma (num1 = 0, num2 = 0) { // () função com dois parametros 
@@ -17,7 +17,7 @@ function soma (num1 = 0, num2 = 0) { // () função com dois parametros
 }
 
 var resultado = soma(26, 35)
-console.log(`O resultado dessa soma é ${resultado}.`)
+console.log("O resultado dessa soma é ${resultado}.")
 
 
 var xd = function (y) { // () função dentro de variavel com parametro 
