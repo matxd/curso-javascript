@@ -17,5 +17,5 @@ function inicial () {
     } else { 
         imagens.src = "imagens/noite.jpg"
         document.body.style.background = "#4169E1"
-    }
+    } 
 }
