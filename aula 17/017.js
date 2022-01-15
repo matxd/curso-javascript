@@ -1,4 +1,4 @@
-var amigo = {nome: "Matheus", peso: 68.7, idade: 18, engordar(p=0){
+var amigo = {nome: "Matheus", peso: 70, idade: 22, engordar(p=0){
     console.log("Engordou")
     this.peso += p
 }}
