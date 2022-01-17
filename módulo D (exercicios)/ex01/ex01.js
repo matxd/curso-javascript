@@ -6,11 +6,11 @@ function inicial () {
     mensagem.innerText = `Agora são ${horario} horas.`
     
 
-    if (horario >= 0 && horario <= 12) {  // && significa intervalo de um ponto a outro
+    if (horario >= 0 && horario <= 12) {  // && significa and ou ' e '
         imagens.src = "imagens/manha.jpg"
         document.body.style.background = "#FFDEAD"
 
-    } else if (horario > 12 && horario <= 18) {  // && significa intervalo de um ponto a outro
+    } else if (horario > 12 && horario <= 18) {  
         imagens.src = "imagens/tarde.jpg"
         document.body.style.background = "#FFA500"
 
