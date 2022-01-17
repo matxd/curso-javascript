@@ -20,27 +20,28 @@
         }
     </style>
 </head>
-<body>
-    <div id="eventdom">Interaja</div>
+<body> 
+    <div id="eventdom">Interaja</div> <!-- Pode adicionar eventos direto na DIV -->
     <script>
         var eventdom = document.getElementById("eventdom")
-        eventdom.addEventListener("mouseenter", entrar)
-        eventdom.addEventListener("click", clicar)
-        eventdom.addEventListener("mouseout", sair)
 
-        function entrar () {
+        eventdom.addEventListener("mouseenter", entrar)
+        eventdom.addEventListener("mouseout", sair)
+        eventdom.addEventListener("click", clicar)
+
+        function entrar() {
             eventdom.innerText = "Entrou"
             eventdom.style.background = "blue"
         }
 
-        function clicar () {
-            eventdom.innerText = "Clicou"
-            eventdom.style.background = "purple"
-        }
-
-        function sair () {
+        function sair() {
             eventdom.innerText = "Saiu"
             eventdom.style.background = "green"
+        }
+
+        function clicar() {
+            eventdom.innerText = "Clicou"
+            eventdom.style.background = "purple"
         }
     </script>
 </body>
