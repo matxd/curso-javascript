@@ -21,7 +21,7 @@ switch(semana) {  // switch serve para situações especificas com valores sem i
     case 4:
         console.log("Hoje é Quinta-Feira.")
     break
-
+    
     case 5:
         console.log("Hoje é Sexta-Feira.")
     break
