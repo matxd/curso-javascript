@@ -10,6 +10,7 @@ function fatorial (numero) { // tradicional
 
 console.log(fatorial(5))
 
+// --------
 
 function fatorial (numero) { // recursividade 
     if (numero == 1) {

@@ -1,18 +1,18 @@
-function converter(){
+function converter() {
     var metros = prompt("Digite uma distância em metros (m)")
-    var km = metros / 1000
-    var hm = metros / 100
-    var dam = metros / 10
-    var dm = metros * 10
-    var cm = metros * 100
-    var mm = metros * 1000
+    var medidas = [metros / 1000, metros / 100, metros / 10, metros * 10, metros * 100, metros * 1000]
+    var nMedidas = ["Quilômetros", "Hectômetros", "Decâmetros", "Decímetros", "Centímetros", "Milímetros"]
 
-    resultado1.innerHTML = `Aproximadamente <strong>${km} Quilômetros.</strong>`     
-    resultado2.innerHTML += `Aproximadamente <strong>${hm} Hectometros.</strong>`
-    resultado3.innerHTML += `Aproximadamente <strong>${dam} Decametros.</strong>`
-    resultado4.innerHTML += `Aproximadamente <strong>${dm} Decimetros.</strong>`
-    resultado5.innerHTML += `Aproximadamente <strong>${cm} Centimetros.</strong>`
-    resultado6.innerHTML += `Aproximadamente <strong>${mm} Milimetros.</strong>`
+    resultado.innerHTML = ""
+
+    for (var controle in medidas) {
+        resultado.innerHTML += `<p>Aproxidamente <strong>${medidas[controle]} ${nMedidas[controle]}.</strong></p>`
+    }   
 }
+
+function limpaR() { 
+       resultado.innerHTML = "Clique no botão acima para iniciar"
+}
+
 
  // .toUpperCase() só funciona com string antes do .
