@@ -6,7 +6,7 @@ function converter() {
     resultado.innerHTML = ""
 
     for (var controle in medidas) {
-        resultado.innerHTML += `<p>Aproxidamente <strong>${medidas[controle]} ${nMedidas[controle]}.</strong></p>`
+        resultado.innerHTML += `<p>Aproximadamente <strong>${medidas[controle]} ${nMedidas[controle]}.</strong></p>`
     }   
 }
 
