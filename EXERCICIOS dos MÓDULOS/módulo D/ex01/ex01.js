@@ -1,8 +1,9 @@
-function inicial () {
+function inicial(){
     var mensagem = document.getElementById("mensagem")
     var imagens = document.getElementById("manha")
     var data = new Date()
     var horario = data.getHours()
+    
     mensagem.innerText = `Agora são ${horario} horas.`
     
 

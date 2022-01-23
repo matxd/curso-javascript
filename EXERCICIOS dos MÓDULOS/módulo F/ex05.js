@@ -1,23 +1,23 @@
-var vnumero = document.getElementById("numero")
-var vlista = document.getElementById("lista")
+var vNumero = document.getElementById("numero")
+var vLista = document.getElementById("lista")
 var resultado = document.getElementById("resultado")
 var valores = []
 
-function inserir () {
-    if (isNumero(vnumero.value) && !inLista(vnumero.value, valores)) {
-        valores.push(Number(vnumero.value))
+function inserir(){
+    if (isNumero(vNumero.value) && !inLista(vNumero.value, valores)) {
+        valores.push(Number(vNumero.value))
         var item = document.createElement("option")
-        item.text = `Valor ${vnumero.value} foi inserido!`
-        vlista.appendChild(item)
+        item.text = `Valor ${vNumero.value} foi inserido!`
+        vLista.appendChild(item)
         resultado.innerHTML = ""
     } else {
         window.alert("Valor invalido ou inserido!")
     }
-    vnumero.value = ""
-    vnumero.focus()
+    vNumero.value = ""
+    vNumero.focus()
 }
 
-function analisar () {
+function analisar(){
     if (valores.length == 0) {
         window.alert("Insira um valor antes de analisar!")
     } else {
@@ -46,7 +46,7 @@ function analisar () {
     }
 }
 
-function isNumero (n) {
+function isNumero(n){
     if (Number(n) >= 1 && Number(n) <= 100) {
         return true
     } else {
@@ -54,7 +54,7 @@ function isNumero (n) {
     }
 }
 
-function inLista (n, l) {
+function inLista(n, l){
     if (l.indexOf(Number(n)) != -1) {
         return true
     } else {

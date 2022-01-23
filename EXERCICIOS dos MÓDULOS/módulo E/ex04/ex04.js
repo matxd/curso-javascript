@@ -1,9 +1,9 @@
-function tabuada () {
+function tabuada(){
     var numeros = document.getElementById("numero")
     var tabuadas = document.getElementById("tabuada")
     
     if (numeros.value.length == 0) {
-        window.alert("Numero invalido")
+        alert("Numero invalido")
     } else {
         var n = Number(numero.value)
         var c = 1

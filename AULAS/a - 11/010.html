@@ -11,14 +11,14 @@
     <input type="button" value="Checar" onclick="calcular()">
     <div id="resultado"></div>
     <script>
-        function calcular() {
+        function calcular(){
             var velocidade = document.getElementById("velocidade")
             var resultado = document.getElementById("resultado")
-            var velocidadev = Number(velocidade.value)
+            var velocidadeV = Number(velocidade.value)
 
-            resultado.innerHTML = `<p>Sua velocidade é de <strong>${velocidadev}km/h.</strong></p>`
+            resultado.innerHTML = `<p>Sua velocidade é de <strong>${velocidadeV}km/h.</strong></p>`
             
-            if (velocidadev > 50) {
+            if (velocidadeV > 50) {
                 resultado.innerHTML = "<p>Você foi <strong>multado</strong> por excesso de velocidade.</p>"
         }
             resultado.innerHTML += "<p>Dirija com atenção!</p>"

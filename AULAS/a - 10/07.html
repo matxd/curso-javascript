@@ -23,19 +23,16 @@
 </head>
 <body>
     <h1>Somando numeros</h1>
-    <input type="number" name="numero1" id="numero1"> +
-    <input type="number" name="numero2" id="numero2">
+    <input type="number" id="numero1"> +
+    <input type="number" id="numero2">
     <input type="button" value="Somar" onclick="somar()">
-    <div id="resultado">Resultado</div>
+    <p id="resultado">Resultado</p>
     <script>
-        function somar() {
-            var numero1 = document.getElementById("numero1")
-            var numero2 = document.getElementById("numero2")
-            var resultado = document.getElementById("resultado")
-            var valor1 = Number(numero1.value)
-            var valor2 = Number(numero2.value)
-            var soma = valor1 + valor2
-            resultado.innerHTML = `A soma entre <strong>${valor1}</strong> e <strong>${valor2}</strong> é igual a <strong>${soma}</strong>`
+        function somar(){
+            var numero1 = Number(document.getElementById("numero1").value)
+            var numero2 = Number(document.getElementById("numero2").value)    
+            var soma = numero1 + numero2
+            resultado.innerHTML = `A soma entre <strong>${numero1}</strong> e <strong>${numero2}</strong> é igual a <strong>${soma}</strong>`
         }
     </script>
 </body>

@@ -1,4 +1,4 @@
-function converter() {
+function convMedida() {
     var metros = prompt("Digite uma distância em metros (m)")
     var medidas = [metros / 1000, metros / 100, metros / 10, metros * 10, metros * 100, metros * 1000]
     var nMedidas = ["Quilômetros", "Hectômetros", "Decâmetros", "Decímetros", "Centímetros", "Milímetros"]

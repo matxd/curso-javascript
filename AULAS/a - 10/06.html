@@ -9,7 +9,7 @@
             background-color: black;
         }
         
-        #eventdom {
+        #eventDom {
             background: rgb(160, 160, 160);
             color: #ffffff;
             font: normal 20pt sans-serif;
@@ -21,27 +21,27 @@
     </style>
 </head>
 <body> 
-    <div id="eventdom">Interaja</div> <!-- Pode adicionar eventos direto na DIV -->
+    <div id="eventDom">Interaja</div> <!-- Pode adicionar eventos direto na DIV -->
     <script>
-        var eventdom = document.getElementById("eventdom")
+        var eventDom = document.getElementById("eventDom")
 
-        eventdom.addEventListener("mouseenter", entrar)
-        eventdom.addEventListener("mouseout", sair)
-        eventdom.addEventListener("click", clicar)
+        eventDom.addEventListener("mouseenter", entrar)
+        eventDom.addEventListener("mouseout", sair)
+        eventDom.addEventListener("click", clicar)
 
-        function entrar() {
-            eventdom.innerText = "Entrou"
-            eventdom.style.background = "blue"
+        function entrar(){
+            eventDom.innerText = "Entrou"
+            eventDom.style.background = "blue"
         }
 
-        function sair() {
-            eventdom.innerText = "Saiu"
-            eventdom.style.background = "green"
+        function sair(){
+            eventDom.innerText = "Saiu"
+            eventDom.style.background = "green"
         }
 
-        function clicar() {
-            eventdom.innerText = "Clicou"
-            eventdom.style.background = "purple"
+        function clicar(){
+            eventDom.innerText = "Clicou"
+            eventDom.style.background = "purple"
         }
     </script>
 </body>

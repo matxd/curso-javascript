@@ -1,19 +1,19 @@
-function verificar () {
+function verificar(){
     var data = new Date()
-    var anoatual = data.getFullYear()
-    var infoano = document.getElementById("nascimento")
+    var anoAtual = data.getFullYear()
+    var infoAno = document.getElementById("nascimento")
     var resultado = document.getElementById("resultado")
 
-    if (infoano.value.length == 0 || infoano.value > anoatual) {
-        window.alert("Dados inválidos")
+    if (infoAno.value.length == 0 || infoAno.value > anoAtual) {
+        alert("Dados inválidos")
     } else {
-        var infosexo = document.getElementsByName("radsex")
-        var idade = anoatual - Number(infoano.value)
+        var infoSexo = document.getElementsByName("radsex")
+        var idade = anoAtual - Number(infoAno.value)
         var genero = ""
         var img = document.createElement("img")
         img.setAttribute("id", "fotos")  // atribuindo id ao img
 
-        if (infosexo[0].checked) { // checagem de marcação 
+        if (infoSexo[0].checked) { // checagem de marcação 
             genero = "Homem"
             if (idade >= 0 && idade < 18) {
                 img.setAttribute("src", "imagens/bebe-m.png") // atribuindo valor dentro do img
@@ -25,7 +25,7 @@ function verificar () {
                 img.setAttribute("src", "imagens/idoso-m.png")
             }
 
-        } else if (infosexo[1].checked) { // checagem de marcação  
+        } else if (infoSexo[1].checked) { // checagem de marcação  
             genero = "Mulher"
             if (idade >= 0 && idade < 18) {
                 img.setAttribute("src", "imagens/bebe-f.png") // atribuindo valor dentro do img
