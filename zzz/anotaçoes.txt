@@ -1,15 +1,11 @@
-uma variavel pode armazenar o resultado de um comando
-
 converter numero para string 
-
 String(n)
 n.toString()
 
-paresentes () chamada pro metodo
+parenteses () chamada pro metodo
 
 toFixed() usado para exibir casas decimais
 
-toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) - mostrar
-valor monetario em moeda REAL
+toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) - mostrar valor monetario em moeda REAL
 
 se a variavel receber ela mesmo posso encurtar usando : +=, -=, *= etc
