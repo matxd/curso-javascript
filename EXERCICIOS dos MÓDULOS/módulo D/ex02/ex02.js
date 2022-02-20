@@ -11,12 +11,12 @@ function verificar(){
         var idade = anoAtual - Number(infoAno.value)
         var genero = ""
         var img = document.createElement("img")
-        img.setAttribute("id", "fotos")  // atribuindo id ao img
+        img.setAttribute("id", "fotos")  
 
-        if (infoSexo[0].checked) { // checagem de marcação 
+        if (infoSexo[0].checked) { 
             genero = "Homem"
             if (idade >= 0 && idade < 18) {
-                img.setAttribute("src", "imagens/bebe-m.png") // atribuindo valor dentro do img
+                img.setAttribute("src", "imagens/bebe-m.png") 
             } else if (idade < 21) {
                 img.setAttribute("src", "imagens/jovem-m.png")
             } else if (idade < 50) {
@@ -25,10 +25,10 @@ function verificar(){
                 img.setAttribute("src", "imagens/idoso-m.png")
             }
 
-        } else if (infoSexo[1].checked) { // checagem de marcação  
+        } else if (infoSexo[1].checked) {
             genero = "Mulher"
             if (idade >= 0 && idade < 18) {
-                img.setAttribute("src", "imagens/bebe-f.png") // atribuindo valor dentro do img
+                img.setAttribute("src", "imagens/bebe-f.png") 
             } else if (idade < 21) {
                 img.setAttribute("src", "imagens/jovem-f.png")
             } else if (idade < 50) {
@@ -37,8 +37,8 @@ function verificar(){
                 img.setAttribute("src", "imagens/idoso-f.png")
             }
         }
-        resultado.style.textAlign = "center" // usando style direto no JavaScript
+        resultado.style.textAlign = "center"
         resultado.innerHTML = `O sistema detectou: ${genero} com ${idade} anos de idade!`
-        resultado.appendChild(img) // adicionando o elemento img
+        resultado.appendChild(img)
     }
 }

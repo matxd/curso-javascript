@@ -7,7 +7,7 @@ function inicial(){
     mensagem.innerText = `Agora são ${horario} horas.`
     
 
-    if (horario >= 0 && horario <= 12) {  // && significa and ou ' e '
+    if (horario >= 0 && horario <= 12) {
         imagens.src = "imagens/manha.jpg"
         document.body.style.background = "#FFDEAD"
 

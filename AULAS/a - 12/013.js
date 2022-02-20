@@ -1,10 +1,10 @@
 var atual = new Date()
 var semana = atual.getDay()
 
-switch(semana) {  // switch serve para situações especificas com valores sem intervalos.
+switch(semana) {  
     case 0:
         console.log("Hoje é Domingo.")
-    break                                 // break OBRIGATORIO
+    break                                 
 
     case 1:
         console.log("Hoje é Segunda-Feira.")

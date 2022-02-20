@@ -1,6 +1,4 @@
-// LEMBRE-SE DE ADICIONAR COMENTARIOS PARA EXECUTAR OS CODIGOS INDIVIDUAIS
-
-function fatorial(numero){ // tradicional
+function fatorial(numero){
     var valorFat = 1
     for (var contador = numero; contador > 1; contador--) {
         valorFat *= contador
@@ -10,9 +8,7 @@ function fatorial(numero){ // tradicional
 
 console.log(fatorial(5))
 
-// --------
-
-function fatorial(numero){ // recursividade 
+function fatorial(numero){ 
     if (numero == 1) {
         return 1
    } else {

@@ -18,11 +18,11 @@ if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0
             p = 1
         }
         if (i < f) {
-            for (var contagem = i; contagem <= f; contagem += p) { // contagem crescente
+            for (var contagem = i; contagem <= f; contagem += p) { 
                 resultado.innerHTML += ` ${contagem} \u{1F449}`
         }
     } else {
-            for (var contagem = i; contagem >= f; contagem -= p) { // contagem decrescente
+            for (var contagem = i; contagem >= f; contagem -= p) {
                 resultado.innerHTML += ` ${contagem} \u{1F449}`
             }
         }

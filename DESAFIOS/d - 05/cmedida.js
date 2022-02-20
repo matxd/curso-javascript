@@ -13,6 +13,3 @@ function convMedida() {
 function limpaR() { 
        resultado.innerHTML = "Clique no botão acima para iniciar"
 }
-
-
- // .toUpperCase() só funciona com string antes do .
